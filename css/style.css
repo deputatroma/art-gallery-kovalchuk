@@ -39,7 +39,7 @@ h1, .album__artist, .album__desc {
 	padding: 15px 10px 0 20px;
 }
 body {
-    min-height: 100vh;
+   min-height: 100vh;
 	background: linear-gradient(50deg, black, #1E1328, #372248);
 }
 
@@ -82,7 +82,7 @@ h2 {
 .album {
 	background: rgba(200, 200, 200, 0.1);
 	border: 1px solid rgba(200, 200, 200, 0.1);
-	box-shadow: 10px 10px 28px -10px rgba(0,0,0,0.87);
+	box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.87);
 	padding: 10px;
 	display: grid;
 	grid-template-rows: auto 1fr;
@@ -92,6 +92,7 @@ h2 {
 	transition: all 0.5s;
 	border-radius: 15px;
 }
+
 
 .album:hover {
 	transform: scale(1.05);
