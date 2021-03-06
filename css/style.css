@@ -25,6 +25,10 @@
 	width: 200px;
 }
 
+.header_logo img:hover {
+	transform: scale(1.05);
+}
+
 .facebook {
 	padding-top: 15px;
 }
@@ -51,9 +55,10 @@ h1 {
 	color: white;
 	font-weight: lighter;
 	text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+	padding: 0 10px;
 }
 
-  .album__desc {
+.album__desc {
 	font-size: 0.7rem;
 }
 
@@ -68,7 +73,7 @@ h2 {
 }
 
 .albums {
-	margin: 50px 10px;
+	margin: 20px 10px;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 20px;
@@ -85,6 +90,7 @@ h2 {
 	align-items: center;
 	color: white;
 	transition: all 0.5s;
+	border-radius: 15px;
 }
 
 .album:hover {
@@ -95,6 +101,9 @@ h2 {
 .album__artwork {
 	width: 100%;
 }
+img {
+	border-radius: 8px;
+ }
 .footer {
 	color: white;
 	text-align: center;
