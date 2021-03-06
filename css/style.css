@@ -63,6 +63,7 @@ h1 {
 }
 
 .album__desc {
+	display: none;
 	font-size: 0.7rem;
 }
 
