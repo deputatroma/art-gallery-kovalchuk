@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
 
+.background{
+	display: none;
+}
+
 * {
 	padding: 0;
 	margin: 0;
