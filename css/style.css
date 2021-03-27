@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
 
-/* .background{
-	display: none;
-} */
+@media (max-width: 550px) {
+	.header_logo {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+}
 
 * {
 	padding: 0;
@@ -11,45 +15,18 @@
 	font-family: sans-serif;
 }
 
-@media (max-width: 430px) {
-	.header_logo {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-	}
-}
-
-.header_logo {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 10px;
-}
-
-.header_logo img {
-	width: 200px;
-}
-
-.header_logo img:hover {
-	transform: scale(1.05);
-}
-
-.facebook {
-	padding-top: 15px;
-}
-
-h1, .album__artist, .album__desc {
-	font-family: 'Nunito', sans-serif;
-	text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
-	padding: 15px 10px 0 20px;
-}
 body {
    min-height: 100vh;
 	background: linear-gradient(50deg, black, #1E1328, #372248);
 }
 
-.album__artist {
-	color: #B6AEBC;
-	text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: greenyellow;
 }
 
 h1 {
@@ -62,11 +39,6 @@ h1 {
 	padding: 0 10px;
 }
 
-.album__desc {
-	display: none;
-	font-size: 0.7rem;
-}
-
 h2 {
 	font-family: 'Istok Web', sans-serif;
 	letter-spacing: 1px;
@@ -75,6 +47,40 @@ h2 {
 	font-size: 1.45rem;
 	text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.75);
 	padding-left: 10px;
+}
+
+.header_logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.img-logo {
+	max-width: 200px;
+}
+
+.opensea {
+	height: 50px;
+	border: 1px solid rgb(189, 185, 185);	
+}
+
+.opensea:hover {
+	border: 1px solid rgb(189, 185, 185);		
+}
+
+.img-logo:hover {
+	transform: scale(1.05);
+}
+
+.facebook {
+	padding-top: 15px;
+}
+
+h1, .album__author, .album__desc {
+	font-family: 'Nunito', sans-serif;
+	text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
+	padding: 15px 10px 0 20px;
 }
 
 .albums {
@@ -98,18 +104,28 @@ h2 {
 	border-radius: 15px;
 }
 
-
 .album:hover {
 	transform: scale(1.05);
 	background: rgba(200, 200, 200, 0.3);
 }
 
+.album__author {
+	color: #B6AEBC;
+	text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.album__desc {
+	font-size: .8rem;
+}
+
 .album__artwork {
 	width: 100%;
 }
+
 img {
 	border-radius: 8px;
- }
+}
+
 .footer {
 	color: white;
 	text-align: center;
