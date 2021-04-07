@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
 	.header_logo {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+	}
+	.opensea {
+		margin-top: 10px;	
+	}
+	header h1 {
+		font-size: 40px;
 	}
 }
 
@@ -16,7 +22,6 @@
 }
 
 body {
-   min-height: 100vh;
 	background: linear-gradient(50deg, black, #1E1328, #372248);
 }
 
@@ -63,6 +68,7 @@ h2 {
 .opensea {
 	height: 50px;
 	border: 1px solid rgb(189, 185, 185);	
+	margin-left: 10px;
 }
 
 .opensea:hover {
@@ -80,7 +86,7 @@ h2 {
 h1, .album__author, .album__desc {
 	font-family: 'Nunito', sans-serif;
 	text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
-	padding: 15px 10px 0 20px;
+	padding: 15px 10px 0 10px;
 }
 
 .albums {
